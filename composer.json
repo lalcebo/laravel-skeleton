@@ -17,6 +17,7 @@
         "laravel/sail": "^1.18",
         "mockery/mockery": "^1.4.4",
         "nunomaduro/collision": "^7.0",
+        "nunomaduro/larastan": "^2.6",
         "pestphp/pest": "^2.24",
         "pestphp/pest-plugin-faker": "^2.0",
         "phpunit/phpunit": "^10.1",
@@ -50,7 +51,12 @@
             "@php artisan key:generate --ansi"
         ],
         "pint:fix": "pint",
-        "test:unit": "pest --stop-on-failure --colors=always"
+        "test:unit": "pest --stop-on-failure --colors=always",
+        "test:phpstan": "phpstan analyse --memory-limit=4G --no-progress --no-interaction",
+        "test": [
+            "@phpstan",
+            "@test:unit"
+        ]
     },
     "extra": {
         "laravel": {
