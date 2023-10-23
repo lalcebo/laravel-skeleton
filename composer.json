@@ -54,7 +54,7 @@
         "test:unit": "pest --stop-on-failure --colors=always",
         "test:phpstan": "phpstan analyse --memory-limit=4G --no-progress --no-interaction",
         "test": [
-            "@phpstan",
+            "@test:phpstan",
             "@test:unit"
         ]
     },
