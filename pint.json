@@ -33,7 +33,7 @@
         "new_with_braces": {
             "anonymous_class": false
         },
-        "no_unneeded_curly_braces":  false,
+        "no_unneeded_curly_braces": false,
         "not_operator_with_space": false,
         "ordered_traits": true,
         "simplified_if_return": true,
